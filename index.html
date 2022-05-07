@@ -1,18 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="descuentos.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Descuentos</title>
 </head>
 <body>
-    <select name="descuentos" id="">
+    <header>
+        <h1>
+            Aplica un descuento a tu artículo
+        </h1>
+        <p>
+            Calculador de descuentos
+        </p>
+    </header>
+
+    <section>   
         <form action="">
+            <label for="precioTotal">
+                Precio total
+            </label>
+            <input id="precioTotal" type="number">
+            
 
-        </form>
-    </select>
+            <label for="descuentoAplicado">
+                Porcentaje de descuento
+            </label>
+            <input id="descuentoAplicado" type="number">
 
-<script src="descuentos.js"></script>
+
+            <button type="button" onclick="calcularDescuento()">Calcular</button>
+            </form>
+    </section>
+    
 </body>
 </html>
