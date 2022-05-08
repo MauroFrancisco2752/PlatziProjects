@@ -1,3 +1,5 @@
+const cupon =""; 
+
 /* ------------ DECLARACION DE OPERACIONES ----------------*/
 console.group("Operaciones");
 
@@ -6,6 +8,8 @@ function formula(precioTotal, descuentoAplicado){
     return subtotal;
 }
 console.groupEnd();
+
+
 
 /* ------------ LLAMAR OBJETOS ----------------*/
 console.group("Llamada de Objetos");
@@ -18,7 +22,9 @@ function calcularDescuento(){
     const inputdescuentoAplicado = Number(inputDescuento.value);
 
     const resultado = formula(inputprecioTotal, inputdescuentoAplicado);
-    alert(resultado);
+    const resultPrice = document.getElementById("resultPrice");
+    resultPrice.innerText = "El precio con descuento es: $" + resultado;
 }
+
 console.groupEnd();
 
