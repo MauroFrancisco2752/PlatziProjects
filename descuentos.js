@@ -1,4 +1,4 @@
-const cupon =""; 
+
 
 /* ------------ DECLARACION DE OPERACIONES ----------------*/
 console.group("Operaciones");
@@ -21,10 +21,42 @@ function calcularDescuento(){
     const inputDescuento = document.getElementById("descuentoAplicado");
     const inputdescuentoAplicado = Number(inputDescuento.value);
 
-    const resultado = formula(inputprecioTotal, inputdescuentoAplicado);
-    const resultPrice = document.getElementById("resultPrice");
-    resultPrice.innerText = "El precio con descuento es: $" + resultado;
+    /* FUNCION DE CUPON */
+    const inputCupon = document.getElementById("cupon");
+    const cuponValue = inputCupon.value;
+    let descuentoCupon = 0;
+
+    switch(cuponValue) {
+        case "desc5":
+            descuentoCupon = 5;
+            break;
+
+        case "desc15":
+            descuentoCupon = 15;
+            break;
+        
+        case "desc25":
+            descuentoCupon = 25;
+            break;
+        }
+
+    const DescuentoAndCupon = descuentoCupon + inputdescuentoAplicado;
+    const resultado = formula(inputprecioTotal, DescuentoAndCupon);
+
+    const resultCupon = document.getElementById("resultPrice");
+    resultCupon.innerText = resultado;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 console.groupEnd();
 
