@@ -31,7 +31,7 @@ function calcularCirculoAreaData(){
 
     const radioArea = radioCirculoArea(userArea);
     const diametroArea = diametroCirculoRadio(radioArea);
-    const perimetroArea = perimetroCirculoRadio(diametroArea);
+    const perimetroArea = perimetroCirculoRadio(radioArea);
 
     const resultadoArea = document.getElementById("valor1");
     const resultadoRadio = document.getElementById("valor2");
@@ -49,14 +49,14 @@ function calcularCirculoRadioData(){
     const userRadio = Number(dataUserRadio.value);
 
     const areaRadio = areaCirculoRadio(userRadio);
-    const diametroRadio = diametroCirculoRadio(areaRadio);
-    const perimetroRadio = perimetroCirculoRadio(diametroRadio);
+    const diametroRadio = diametroCirculoRadio(userRadio);
+    const perimetroRadio = perimetroCirculoRadio(userRadio);
 
     const resultadoRadio = document.getElementById("valor1");
     const resultadoArea = document.getElementById("valor2");
     const resultadoDiametro = document.getElementById("valor3");
     const resultadoPerimetro = document.getElementById("valor4");
-   
+
     resultadoRadio.innerText = "El radio ingresado es: "+ userRadio;
     resultadoArea.innerText = "Area: "+ areaRadio;
     resultadoDiametro.innerText = "Diametro: "+ diametroRadio;
