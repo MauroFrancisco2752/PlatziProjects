@@ -2,7 +2,7 @@ const PI = Number(Math.PI);
 
 /************** DATOS: SOLO RADIO **************/
 function areaCirculoRadio(radio){
-    const resultado = PI * [radio * 2];
+    const resultado = PI * (Math.pow(radio, 2));
     return resultado;
 }
 
@@ -12,7 +12,7 @@ function diametroCirculoRadio(radio){
 }
 
 function perimetroCirculoRadio(radio){
-    const resultado = radio * [PI * PI];
+    const resultado = (PI * 2) * radio;
     return resultado;
 }
 
@@ -65,3 +65,79 @@ function calcularCirculoRadioData(){
 
 
 
+// TRIANGULO
+// FORMULAS
+
+function areaTriangulo(base, altura){
+    const resultado = (base * altura) / 2;
+    return resultado; 
+}
+
+function perimetroTriangulo (lado1, lado2, base){
+    const resultado = Number(lado1 + lado2 + base);
+    return resultado;
+}
+
+// LLAMADO DE FUNCIONES:        
+function calcularTrianguloData(){
+    const inputDataLado1 = document.getElementById("dataLado1");
+    const dataLado1 = Number(inputDataLado1.value);
+    const inputDataLado2 = document.getElementById("dataLado2");
+    const dataLado2 = Number(inputDataLado2.value);
+    const inputDataBase = document.getElementById("dataBase")
+    const dataBase = Number(inputDataBase.value);
+    const inputDataAltura = document.getElementById("dataAltura")
+    const dataAltura = Number(inputDataAltura.value);
+
+    // VALIDACION EMPTY DATA
+
+    /* ---------------------------------------------------------------------------------- */ 
+    const resultadoAreaTriangulo = areaTriangulo(dataBase, dataAltura);
+    const resultadoPerimetroTriangulo = perimetroTriangulo(dataLado1, dataLado2, dataBase);
+
+    const valor1Resultado = document.getElementById("valorArea");
+    const valor2Resultado = document.getElementById("valorPerimetro");
+
+    valor1Resultado.innerText = "Area: " + resultadoAreaTriangulo;
+    valor2Resultado.innerText = "Perimetro: " + resultadoPerimetroTriangulo; 
+}
+
+
+
+
+
+
+/* CUADRADO */
+// FORMULAS:
+function areaCuadrado(lado){
+    const resultado = Math.pow(lado, 2);
+    return resultado;
+}
+
+function perimetroCuadrado(lado){
+    const resultado = lado * 4;
+    return resultado;
+}
+
+function diagonalCuadrado(lado){
+    resultado = [Math.sqrt(2) * lado];
+    return resultado;
+}
+
+// LLAMADO DE FUNCION
+function calcularCuadradoData(){
+    const inputLadoData = document.getElementById("dataLado");
+    const ladoData = inputLadoData.value;
+
+    const RareaCuadrado = areaCuadrado(ladoData);
+    const RperimetroCuadrado = perimetroCuadrado(ladoData);
+    const RdiagonalCuadrado = diagonalCuadrado(ladoData);
+
+    const inputValorArea = document.getElementById("valorAreaCuadrado");
+    const inputValorPerimetro = document.getElementById("valorPerimetroCuadrado");
+    const inputValorDiagonal = document.getElementById("valorDiagonalCuadrado");
+
+    inputValorArea.innerText = "Area: " + RareaCuadrado;
+    inputValorPerimetro.innerText = "Perimetro: " + RperimetroCuadrado;
+    inputValorDiagonal.innerText = "Diagonal: " + RdiagonalCuadrado;
+}

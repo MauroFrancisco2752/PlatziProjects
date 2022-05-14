@@ -39,10 +39,47 @@
 
     </section>
 
+    <section>
     <header>
-            <br><h3>TRIANGULO</h3>Ingresa solo un valor:
+            <br><h3>TRIANGULO</h3>Ingresa los valores solicitados:
     </header>
+    <form action="">
+    <label for="dataLado1">Ingresa  un valor: </label>
+    <input type="number" id="dataLado1" placeholder="Lado 1:">
+    <label for="dataLado2">Ingresa  un valor: </label>
+    <input type="number" id="dataLado2" placeholder="Lado 2:">
+    <label for="dataBase">Ingresa  un valor: </label>
+    <input type="number" id="dataBase" placeholder="Base:">
+    <label for="dataAltura">Ingresa  un valor: </label>
+    <input type="number" id="dataAltura" placeholder="Altura:">
 
-    
+    <button type="button" onclick="calcularTrianguloData()">Calcular</button>
+
+    <p id="valorArea">Area</p>
+    <p id="valorPerimetro">Perimetro</p>
+
+
+    </form>
+    </section>
+
+    <section>
+        <header>
+            <br><h3>CUADRADO</h3><br>Ingresa los valores solicitados:
+        </header>
+        <form action="">
+            <label for="dataLado">Ingresa un Valor: </label>
+            <input type="number" id="dataLado" placeholder="Lado">
+
+            <button type="button" onclick="calcularCuadradoData()">Calcular</button>
+
+            <p id="valorAreaCuadrado"></p>
+            <p id="valorPerimetroCuadrado"></p>
+            <p id="valorDiagonalCuadrado"></p>
+
+
+
+
+        </form>
+    </section>
 </body>
 </html>
