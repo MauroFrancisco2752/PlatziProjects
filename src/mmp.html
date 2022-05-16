@@ -16,10 +16,10 @@
     <section>
         <form action="">
 
-            <label for="dataArea">
+            <label for="buttonPromedio">
                 Calcular el Promedio:
             </label>
-            <button type="button" onclick="calcularPromedio()">Calcular</button>
+            <button type="button" onclick="calcularPromedio()" id="buttonPromedio">Calcular</button>
 
             <p id="rPromedio">Resultado:</p>
 
@@ -28,55 +28,25 @@
     </section>
 
 
-
-
-
-
-
-
-
-    <section>
     <header>
-            <br><h3>TRIANGULO</h3>Ingresa los valores solicitados:
+            <h3>Calcular Moda</h3>
     </header>
-    <form action="">
-    <label for="dataLado1">Ingresa  un valor: </label>
-    <input type="number" id="dataLado1" placeholder="Lado 1:">
-    <label for="dataLado2">Ingresa  un valor: </label>
-    <input type="number" id="dataLado2" placeholder="Lado 2:">
-    <label for="dataBase">Ingresa  un valor: </label>
-    <input type="number" id="dataBase" placeholder="Base:">
-    <label for="dataAltura">Ingresa  un valor: </label>
-    <input type="number" id="dataAltura" placeholder="Altura:">
-
-    <button type="button" onclick="calcularTrianguloData()">Calcular</button>
-
-    <p id="valorArea">Area</p>
-    <p id="valorPerimetro">Perimetro</p>
-
-
-    </form>
-    </section>
-
     <section>
-        <header>
-            <br><h3>CUADRADO</h3><br>Ingresa los valores solicitados:
-        </header>
         <form action="">
-            <label for="dataLado">Ingresa un Valor: </label>
-            <input type="number" id="dataLado" placeholder="Lado">
+            <label for="buttonModa">
+                Calcular la Moda:
+            </label>
+            <button type="button" onclick="calcularModa()" id="buttonModa">Calcular</button>
 
-            <button type="button" onclick="calcularCuadradoData()">Calcular</button>
-
-            <p id="valorAreaCuadrado"></p>
-            <p id="valorPerimetroCuadrado"></p>
-            <p id="valorDiagonalCuadrado"></p>
-
-
-
+            <p id="rModa">Resultado:</p>
 
         </form>
+
+    </section>
+
+
     </section>
     <script src="mmp.js"></script>
+    <script src="moda.js"></script>
 </body>
 </html>

@@ -13,6 +13,7 @@ function calcularMediaAritmetica(lista) {
     200,
     500,
     600,
+    600,
     400000000,
   ];
   
