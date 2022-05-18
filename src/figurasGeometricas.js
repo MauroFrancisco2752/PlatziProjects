@@ -18,7 +18,7 @@ function perimetroCirculoRadio(radio){
 
 
 
-/************** DATOS: SOLO AREA **************/
+/************** DATOS: SOLO AREA ***************/
 function radioCirculoArea(area){
     const resultado = Math.sqrt([area / PI]);
     return resultado;

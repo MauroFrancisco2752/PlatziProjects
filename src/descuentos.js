@@ -1,6 +1,6 @@
 
 
-/* ------------ DECLARACION DE OPERACIONES ----------------*/
+/* ------------ DECLARACION DE OPERACIONES -----------------*/
 console.group("Operaciones");
 
 function formula(precioTotal, descuentoAplicado){

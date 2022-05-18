@@ -1,4 +1,4 @@
-/* *************** */
+/* *****************/
 /* PROMEDIO */
 //FUNCION
 function calcularPromedio(){
